@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="cmp.metaTitle">Compare plans — Flowdesk</title>
+<meta name="description" data-i18n-attr="content:cmp.metaDesc" content="Flowdesk plans side by side: channels, automation, reporting, security and support. Per person, per month, with a 14-day trial on every plan.">
+<meta name="theme-color" content="#0E1013" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#FAFAF9" media="(prefers-color-scheme: light)">
+<link rel="canonical" href="https://dmitrii-mazurkevich.github.io/saas-landing-page/pricing.html">
+<link rel="alternate" hreflang="en" href="https://dmitrii-mazurkevich.github.io/saas-landing-page/pricing.html?lang=en">
+<link rel="alternate" hreflang="ru" href="https://dmitrii-mazurkevich.github.io/saas-landing-page/pricing.html?lang=ru">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230E1013'/%3E%3Cpath d='M28 30h44M28 50h30M28 70h38' stroke='%23C9A461' stroke-width='9' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/main.css">
+<script>
+(function () {
+  var d = document.documentElement, langs = ['en', 'ru'], lang = null;
+  var p = location.search.match(/[?&]lang=([a-z]{2})/i);
+  if (p && langs.indexOf(p[1].toLowerCase()) > -1) lang = p[1].toLowerCase();
+  if (!lang) { try { var s = localStorage.getItem('fd-lang'); if (langs.indexOf(s) > -1) lang = s; } catch (e) {} }
+  if (!lang) { lang = /^ru/i.test(navigator.language || '') ? 'ru' : 'en'; }
+  d.setAttribute('data-lang', lang);
+  if (lang !== 'en') { d.className += ' i18n-pending'; setTimeout(function () { d.classList.remove('i18n-pending'); }, 1200); }
+  try { var t = localStorage.getItem('fd-theme'); if (t) d.setAttribute('data-theme', t); } catch (e) {}
+})();
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main" data-i18n="nav.skip">Skip to content</a>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Main">
+      <a class="logo" href="index.html">
+        <svg class="logo__mark" viewBox="0 0 100 100" aria-hidden="true">
+          <rect width="100" height="100" rx="22" fill="var(--accent)"/>
+          <path d="M28 30h44M28 50h30M28 70h38" stroke="var(--accent-ink)" stroke-width="9" stroke-linecap="round"/>
+        </svg>
+        <span class="logo__name">Flowdesk</span>
+      </a>
+      <ul class="nav__list">
+        <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
+        <li><a href="index.html#calculator" data-i18n="nav.roi">ROI</a></li>
+        <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+        <li><a href="pricing.html" aria-current="page" data-i18n="nav.compare">Compare plans</a></li>
+        <li><a href="index.html#faq" data-i18n="nav.faq">FAQ</a></li>
+      </ul>
+      <div class="nav__actions">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="ru" aria-pressed="false">RU</button>
+        </div>
+        <button class="icon-btn theme-toggle" type="button" data-i18n-attr="aria-label:nav.theme" aria-label="Switch colour theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        </button>
+        <button class="icon-btn nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" data-i18n-attr="aria-label:nav.menu" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+        <a class="btn btn--sm nav__cta" href="#plans" data-analytics="cta_nav_trial" data-i18n="nav.trial">Start free trial</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobile-menu">
+  <a href="index.html#features" data-i18n="nav.features">Features</a>
+  <a href="index.html#calculator" data-i18n="nav.roi">ROI</a>
+  <a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+  <a href="pricing.html" data-i18n="nav.compare">Compare plans</a>
+  <a href="index.html#faq" data-i18n="nav.faq">FAQ</a>
+  <a class="btn" href="#plans" data-analytics="cta_mobilemenu_trial" data-i18n="nav.trial">Start free trial</a>
+</div>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="container">
+      <h1 class="page-head__title" data-i18n="cmp.title">Every line, side by side</h1>
+      <p class="page-head__lede" data-i18n="cmp.lede">
+        Same price whether you pay by card or by invoice. Read-only users are always free.
+      </p>
+    </div>
+  </section>
+
+  <section class="section--tight" id="plans">
+    <div class="container">
+      <div class="text-center">
+        <div class="billing" role="group" data-i18n-attr="aria-label:price.billing" aria-label="Billing period">
+          <button type="button" data-billing="monthly" aria-pressed="true" data-i18n="price.monthly">Monthly</button>
+          <button type="button" data-billing="annual" aria-pressed="false" data-i18n="price.annual">Annual</button>
+          <span class="save" data-i18n="price.save">2 months free</span>
+        </div>
+      </div>
+
+      <div class="plans">
+        <article class="plan reveal">
+          <h3 class="plan__name" data-i18n="price.p1n">Starter</h3>
+          <p class="plan__for" data-i18n="price.p1f">One or two people, one mailbox</p>
+          <p class="plan__price">
+            <span class="plan__amount" data-price data-monthly="15" data-annual="12">$15</span>
+            <span class="plan__per" data-i18n="price.per">/ person / month</span>
+          </p>
+          <p class="plan__billed" data-billed-note></p>
+          <a class="btn btn--ghost btn--block" href="#" data-analytics="cta_compare_starter" data-i18n="price.startTrial">Start free trial</a>
+        </article>
+
+        <article class="plan plan--featured reveal">
+          <span class="plan__badge" data-i18n="price.popular">Most teams pick this</span>
+          <h3 class="plan__name" data-i18n="price.p2n">Team</h3>
+          <p class="plan__for" data-i18n="price.p2f">3–20 people, several channels</p>
+          <p class="plan__price">
+            <span class="plan__amount" data-price data-monthly="29" data-annual="24">$29</span>
+            <span class="plan__per" data-i18n="price.per">/ person / month</span>
+          </p>
+          <p class="plan__billed" data-billed-note></p>
+          <a class="btn btn--block" href="#" data-analytics="cta_compare_team" data-i18n="price.startTrial">Start free trial</a>
+        </article>
+
+        <article class="plan reveal">
+          <h3 class="plan__name" data-i18n="price.p3n">Scale</h3>
+          <p class="plan__for" data-i18n="price.p3f">20+ people, audit and control</p>
+          <p class="plan__price">
+            <span class="plan__amount" data-price data-monthly="59" data-annual="49">$59</span>
+            <span class="plan__per" data-i18n="price.per">/ person / month</span>
+          </p>
+          <p class="plan__billed" data-billed-note></p>
+          <a class="btn btn--ghost btn--block" href="#" data-analytics="cta_compare_scale" data-i18n="price.startTrial">Start free trial</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="table-wrap reveal">
+        <table class="compare">
+          <caption class="visually-hidden" data-i18n="cmp.caption">Feature comparison across Flowdesk plans</caption>
+          <thead>
+            <tr>
+              <th scope="col" data-i18n="cmp.feature">Feature</th>
+              <th scope="col" data-i18n="price.p1n">Starter</th>
+              <th scope="col" data-i18n="price.p2n">Team</th>
+              <th scope="col" data-i18n="price.p3n">Scale</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="group"><td colspan="4" data-i18n="cmp.g1">Channels</td></tr>
+            <tr><td data-i18n="cmp.r1">Shared email inboxes</td><td>1</td><td>5</td><td data-i18n="cmp.unlimited">Unlimited</td></tr>
+            <tr><td data-i18n="cmp.r2">Live chat widget</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r3">WhatsApp, Instagram, Facebook</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r4">Slack and Microsoft Teams</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+
+            <tr class="group"><td colspan="4" data-i18n="cmp.g2">Working the queue</td></tr>
+            <tr><td data-i18n="cmp.r5">Collision detection</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r6">Saved replies</td><td>25</td><td data-i18n="cmp.unlimited">Unlimited</td><td data-i18n="cmp.unlimited">Unlimited</td></tr>
+            <tr><td data-i18n="cmp.r7">Automation rules</td><td class="no">—</td><td>50</td><td data-i18n="cmp.unlimited">Unlimited</td></tr>
+            <tr><td data-i18n="cmp.r8">SLA timers and escalation</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r9">Round-robin assignment</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+
+            <tr class="group"><td colspan="4" data-i18n="cmp.g3">Knowledge and reporting</td></tr>
+            <tr><td data-i18n="cmp.r10">Internal wiki</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r11">Public help centre on your domain</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r12">Multilingual articles</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r13">Dashboard and CSAT</td><td data-i18n="cmp.basic">Basic</td><td data-i18n="cmp.full">Full</td><td data-i18n="cmp.full">Full</td></tr>
+            <tr><td data-i18n="cmp.r14">Scheduled reports</td><td class="no">—</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+
+            <tr class="group"><td colspan="4" data-i18n="cmp.g4">Security and administration</td></tr>
+            <tr><td data-i18n="cmp.r15">Two-factor authentication</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r16">SSO / SAML</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r17">Audit log</td><td class="no">—</td><td>90 <span data-i18n="cmp.days">days</span></td><td>2 <span data-i18n="cmp.years">years</span></td></tr>
+            <tr><td data-i18n="cmp.r18">Custom roles</td><td class="no">—</td><td class="no">—</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r19">Data region</td><td>EU</td><td>EU</td><td data-i18n="cmp.euUs">EU or US</td></tr>
+
+            <tr class="group"><td colspan="4" data-i18n="cmp.g5">Support</td></tr>
+            <tr><td data-i18n="cmp.r20">Email support</td><td class="yes">✓</td><td class="yes">✓</td><td class="yes">✓</td></tr>
+            <tr><td data-i18n="cmp.r21">First response target</td><td>24 <span data-i18n="cmp.hours">h</span></td><td>8 <span data-i18n="cmp.hours">h</span></td><td>2 <span data-i18n="cmp.hours">h</span></td></tr>
+            <tr><td data-i18n="cmp.r22">Migration help</td><td data-i18n="cmp.selfServe">Self-serve</td><td data-i18n="cmp.guided">Guided</td><td data-i18n="cmp.doneForYou">Done for you</td></tr>
+            <tr><td data-i18n="cmp.r23">Uptime SLA</td><td class="no">—</td><td class="no">—</td><td>99.9%</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="muted mt-3" style="font-size:.86rem" data-i18n="cmp.note">
+        Read-only members — people who only view conversations or leave private notes — are free
+        on every plan and are not counted as seats.
+      </p>
+    </div>
+  </section>
+
+  <!-- Billing FAQ -->
+  <section class="section section--alt">
+    <div class="container container--narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow" data-i18n="cmp.faqEyebrow">Billing</p>
+        <h2 class="section-title" data-i18n="cmp.faqTitle">How paying for it works</h2>
+      </div>
+
+      <div class="faq">
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="cfaq-1">
+            <span data-i18n="cmp.q1">Can we change plan mid-month?</span>
+            <span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button></h3>
+          <div class="faq__a" id="cfaq-1"><div><p data-i18n="cmp.a1">
+            Any time, in both directions. Upgrades are prorated to the day; downgrades take
+            effect at the end of the period you've already paid for. Nobody has to email support
+            to do it.
+          </p></div></div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="cfaq-2">
+            <span data-i18n="cmp.q2">What if the team size changes?</span>
+            <span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button></h3>
+          <div class="faq__a" id="cfaq-2"><div><p data-i18n="cmp.a2">
+            You're billed for the seats in use at the end of each month. Add someone for a busy
+            fortnight and you pay for a fortnight, not a year. Seasonal teams don't get punished
+            for it.
+          </p></div></div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="cfaq-3">
+            <span data-i18n="cmp.q3">Do you invoice?</span>
+            <span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button></h3>
+          <div class="faq__a" id="cfaq-3"><div><p data-i18n="cmp.a3">
+            On annual plans, yes — bank transfer with 30-day terms, VAT handled properly for EU
+            companies. The price is the same as paying by card; there's no surcharge for wanting
+            a piece of paper.
+          </p></div></div>
+        </div>
+        <div class="faq__item">
+          <h3><button class="faq__q" type="button" aria-expanded="false" aria-controls="cfaq-4">
+            <span data-i18n="cmp.q4">Is there a discount for non-profits?</span>
+            <span class="faq__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></span>
+          </button></h3>
+          <div class="faq__a" id="cfaq-4"><div><p data-i18n="cmp.a4">
+            50% off every plan for registered non-profits and educational institutions. Send
+            proof of status from your organisation's domain and it's applied within a day.
+          </p></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section--tight">
+    <div class="container">
+      <div class="cta reveal">
+        <h2 data-i18n="cta.title">Try it on this week's real messages</h2>
+        <p data-i18n="cta.lede">
+          Fourteen days, every feature on, no card. The honest way to find out whether the
+          numbers above hold for your team.
+        </p>
+        <div class="center-actions">
+          <a class="btn btn--lg" href="#" data-analytics="cta_compare_footer_trial" data-i18n="hero.cta1">Start 14-day free trial</a>
+          <a class="btn btn--ghost btn--lg" href="index.html#calculator" data-analytics="cta_compare_footer_roi" data-i18n="hero.cta2">See what it saves you</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <a class="logo" href="index.html">
+          <svg class="logo__mark" viewBox="0 0 100 100" aria-hidden="true">
+            <rect width="100" height="100" rx="22" fill="var(--accent)"/>
+            <path d="M28 30h44M28 50h30M28 70h38" stroke="var(--accent-ink)" stroke-width="9" stroke-linecap="round"/>
+          </svg>
+          <span class="logo__name">Flowdesk</span>
+        </a>
+        <p class="footer__about" data-i18n="foot.about">
+          The shared inbox for small support teams. One queue, clear owners, and answers
+          your team only has to write once.
+        </p>
+      </div>
+      <div>
+        <h4 data-i18n="foot.product">Product</h4>
+        <ul>
+          <li><a href="index.html#features" data-i18n="nav.features">Features</a></li>
+          <li><a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a></li>
+          <li><a href="pricing.html" data-i18n="nav.compare">Compare plans</a></li>
+          <li><a href="index.html#calculator" data-i18n="nav.roi">ROI calculator</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="foot.company">Company</h4>
+        <ul>
+          <li><a href="#" data-i18n="foot.about2">About</a></li>
+          <li><a href="#" data-i18n="foot.careers">Careers</a></li>
+          <li><a href="#" data-i18n="foot.blog">Blog</a></li>
+          <li><a href="#" data-i18n="foot.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 data-i18n="foot.legal">Legal</h4>
+        <ul>
+          <li><a href="#" data-i18n="foot.privacy">Privacy</a></li>
+          <li><a href="#" data-i18n="foot.terms">Terms</a></li>
+          <li><a href="#" data-i18n="foot.dpa">DPA</a></li>
+          <li><a href="#" data-i18n="foot.status">Status</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span data-year>2026</span> Flowdesk</span>
+      <span data-i18n="foot.demoNote">Fictional product. Concept landing page built for a web-development portfolio.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/i18n.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

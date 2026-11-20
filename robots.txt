@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dmitrii-mazurkevich.github.io/saas-landing-page/sitemap.xml
