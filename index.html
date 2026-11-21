@@ -30,7 +30,7 @@
     var p = location.search.match(/[?&]lang=([a-z]{2})/i);
     if (p && langs.indexOf(p[1].toLowerCase()) > -1) lang = p[1].toLowerCase();
     if (!lang) { try { var s = localStorage.getItem('fd-lang'); if (langs.indexOf(s) > -1) lang = s; } catch (e) {} }
-    if (!lang) { lang = /^ru/i.test(navigator.language || '') ? 'ru' : 'en'; }
+    if (!lang) { lang = 'en'; }
     d.setAttribute('data-lang', lang);
     if (lang !== 'en') { d.className += ' i18n-pending'; setTimeout(function () { d.classList.remove('i18n-pending'); }, 1200); }
     try { var t = localStorage.getItem('fd-theme'); if (t) d.setAttribute('data-theme', t); } catch (e) {}
